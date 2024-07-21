@@ -48,6 +48,12 @@ const Footer = () => {
           >
             Milk Price
           </Link>
+          <Link
+            className="block mb-2 text-black hover:text-[#00d684]"
+            to="/news"
+          >
+            Latest News
+          </Link>
         </nav>
         <nav>
           <h6 className="font-bold mb-4 text-black">Socials</h6>
