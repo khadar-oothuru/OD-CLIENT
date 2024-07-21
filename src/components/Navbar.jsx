@@ -51,6 +51,14 @@ const Navbar = () => {
                 Market Price
               </Link>
             </li>
+            <li className="mb-4 transform transition-transform duration-300 hover:scale-105">
+              <Link
+                to="/news"
+                className="text-black hover:text-[#00d684] font-medium text-lg"
+              >
+                Latest News
+              </Link>
+            </li>
           </ul>
         </div>
         <Link
@@ -90,6 +98,14 @@ const Navbar = () => {
               className="text-black hover:text-[#00d684] font-medium"
             >
               Market Price
+            </Link>
+          </li>
+          <li className=" transform transition-transform duration-300 hover:scale-105">
+            <Link
+              to="/news"
+              className="text-black hover:text-[#00d684] font-medium"
+            >
+              Latest News
             </Link>
           </li>
         </ul>

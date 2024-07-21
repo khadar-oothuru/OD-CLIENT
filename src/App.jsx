@@ -6,6 +6,7 @@ import MarketPrice from "./components/MarketPrice";
 import Feeds from "./components/Feeds";
 import Login from "./components/Login";
 import Footer from "./components/Footer";
+import QuesCards from "./components/News/QuesCards";
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/market" element={<MarketPrice />} />
           <Route path="/feed" element={<Feeds />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/news" element={<QuesCards />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
