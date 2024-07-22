@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Aboutus from "./components/Aboutus";
+import Aboutus from "./components/About/Aboutus";
 import Home from "./components/Home";
 import MarketPrice from "./components/MarketPrice";
-import Feeds from "./components/Feeds";
+import Feeds from "./components/Feed/Feeds";
 import Login from "./components/Login/Login";
 import Footer from "./components/Footer";
 import QuesCards from "./components/News/QuesCards";
