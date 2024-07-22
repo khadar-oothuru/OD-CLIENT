@@ -33,9 +33,10 @@ const LoginForm = ({ toggleAuthMode }) => {
           type="submit"
           className="w-full bg-black font-semibold text-white py-2 rounded-md hover:bg-[#00d684] transition duration-300 flex items-center justify-center space-x-2"
         >
-          <MdLogin className="w-6 h-6" /> {/* Adjust width and height here */}
+    
           <span className="font-medium">Login</span>{" "}
-          {/* Adjust text size if needed */}
+          <MdLogin className="w-6 h-6" />
+         
         </button>
       </form>
     </div>
