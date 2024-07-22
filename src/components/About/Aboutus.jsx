@@ -1,31 +1,8 @@
 import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
 import CustomSlider from './CustomSlider'; // Adjust the import path if necessary
+import { FaCheckCircle } from 'react-icons/fa';
 
 const About = () => {
-  const slides = [
-    <div key="1" className="p-6">
-      <img src="https://via.placeholder.com/500x300" alt="Alex B." className="w-full h-48 object-cover rounded-lg mb-4" />
-      <p className="text-gray-700">"This platform has transformed the way we handle our dairy transactions. It's user-friendly and highly efficient."</p>
-      <p className="mt-4 text-gray-600">- Alex B., Dairy Owner</p>
-    </div>,
-    <div key="2" className="p-6">
-      <img src="https://via.placeholder.com/500x300" alt="Priya S." className="w-full h-48 object-cover rounded-lg mb-4" />
-      <p className="text-gray-700">"The automated billing and payment tracking features have made managing our business much easier."</p>
-      <p className="mt-4 text-gray-600">- Priya S., Milk Seller</p>
-    </div>,
-    <div key="3" className="p-6">
-      <img src="https://via.placeholder.com/500x300" alt="Raj M." className="w-full h-48 object-cover rounded-lg mb-4" />
-      <p className="text-gray-700">"An invaluable tool for our daily operations. The reporting tools are especially helpful for making informed decisions."</p>
-      <p className="mt-4 text-gray-600">- Raj M., Dairy Manager</p>
-    </div>,
-    <div key="4" className="p-6">
-      <img src="https://via.placeholder.com/500x300" alt="Nina T." className="w-full h-48 object-cover rounded-lg mb-4" />
-      <p className="text-gray-700">"The seamless integration of the system into our workflow has been a game-changer for us."</p>
-      <p className="mt-4 text-gray-600">- Nina T., Operations Manager</p>
-    </div>
-  ];
-
   return (
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-white shadow">
@@ -111,15 +88,7 @@ const About = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 flex items-center gap-4">
               <FaCheckCircle className="text-green-600 text-3xl" />
-              <p className="text-gray-700">Secure payment processing and automated reconciliation.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 flex items-center gap-4">
-              <FaCheckCircle className="text-green-600 text-3xl" />
-              <p className="text-gray-700">Customizable reporting tools for insightful analytics.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 flex items-center gap-4">
-              <FaCheckCircle className="text-green-600 text-3xl" />
-              <p className="text-gray-700">24/7 customer support and assistance.</p>
+              <p className="text-gray-700">Secure and reliable payment processing and record-keeping.</p>
             </div>
           </div>
         </section>
@@ -128,7 +97,7 @@ const About = () => {
           <h2 className="text-3xl font-semibold text-center text-green-600 mb-6">
             Testimonials
           </h2>
-          <CustomSlider slides={slides} />
+          <CustomSlider />
         </section>
       </main>
     </div>
