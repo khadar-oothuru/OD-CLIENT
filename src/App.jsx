@@ -4,7 +4,7 @@ import Aboutus from "./components/Aboutus";
 import Home from "./components/Home";
 import MarketPrice from "./components/MarketPrice";
 import Feeds from "./components/Feeds";
-import Login from "./components/Login";
+import Login from "./components/Login/Login";
 import Footer from "./components/Footer";
 import QuesCards from "./components/News/QuesCards";
 

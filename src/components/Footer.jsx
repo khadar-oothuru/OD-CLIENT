@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#f5f6f7] text-base-content p-10 border-t border-gray-300">
+    <footer className="bg-white text-base-content p-10 border-t border-gray-500">
       <div className="flex flex-wrap justify-between">
         <aside className="w-full sm:w-auto mb-6 sm:mb-0">
           <svg

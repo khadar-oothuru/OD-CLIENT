@@ -4,7 +4,7 @@ import { MdLogin } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-white p-4 sm:px-20 border-b border-gray-300">
+    <div className="navbar bg-white p-4 sm:px-20 border-b border-gray-500">
       <div className="navbar-start">
         <div className="dropdown relative">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,7 +66,7 @@ const Navbar = () => {
           // className="btn btn-ghost text-4xl font-bold"
           className="text-4xl font-bold"
           style={{
-            color: "#00d684",
+            color: "#00a264",
             fontFamily: "Georgia, serif",
             fontStyle: "italic",
           }}

@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import toast from "react-hot-toast";
 import classes from "./Styles/Ques.module.css";
+import { MdOutlineChromeReaderMode } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Cards = () => {
   const [newsData, setNewsData] = useState([]);
@@ -96,9 +98,16 @@ const Card = ({ urlToImage, url, title, description }) => {
       />
       <h1 className={classes.que}>{title}</h1>
       <p className={classes.ans}>{shortDescription}</p>
-      <button className={classes.btn_learn} onClick={openUrlInNewTab}>
-        Learn More
-      </button>
+      <div className="flex justify-start mt-10">
+        <Link
+          // to="/login"
+          className="btn hover:bg-[#00d684] hover:text-white text-white flex items-center"
+          onClick={openUrlInNewTab}
+        >
+          <MdOutlineChromeReaderMode className="w-6 h-6" />
+          <span className="ml-2">Learn more</span>
+        </Link>
+      </div>
     </motion.div>
   );
 };
