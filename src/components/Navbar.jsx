@@ -115,8 +115,9 @@ const Navbar = () => {
           to="/login"
           className="btn hover:bg-[#00d684] hover:text-white text-white flex items-center"
         >
-          <MdLogin className="w-6 h-6" />
           <span className="ml-2">Login / Register</span>
+
+          <MdLogin className="w-6 h-6" />
         </Link>
       </div>
       <div className="navbar-end flex lg:hidden">

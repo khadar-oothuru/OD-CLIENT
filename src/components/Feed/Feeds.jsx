@@ -9,7 +9,7 @@ const Feeds = () => {
       id: 1,
       name: "Alfalfa Hay",
       description: "High-protein feed suitable for dairy cattle.",
-      image: "https://via.placeholder.com/300",
+      image: "https://eu-images.contentstack.com/v3/assets/blte5a51c2d28bbcc9c/blt8117f606858a5744/64871945cfda7d0b32aea78c/Hay_20Bale_0.jpg?width=700&auto=webp&quality=80&disable=upscale",
       nutrients: {
         protein: "16%",
         fiber: "25%",
@@ -23,7 +23,7 @@ const Feeds = () => {
       id: 2,
       name: "Corn Silage",
       description: "Fermented high-energy feed for ruminants.",
-      image: "https://via.placeholder.com/300",
+      image: "https://www.hubbardfeeds.com/sites/default/files/2020-09/shutterstock_385260625_1200x628.jpg",
       nutrients: {
         protein: "8%",
         fiber: "30%",
@@ -37,7 +37,7 @@ const Feeds = () => {
       id: 3,
       name: "Grain Mix",
       description: "Mixed grains for supplemental energy and nutrients.",
-      image: "https://via.placeholder.com/300",
+      image: "https://5.imimg.com/data5/SELLER/Default/2022/7/RU/AX/AH/321009/multi-grain-cattle-feed-1--500x500.jpg",
       nutrients: {
         protein: "12%",
         fiber: "8%",
@@ -52,7 +52,7 @@ const Feeds = () => {
       name: "Soybean Meal",
       description:
         "High-protein feed made from soybeans, suitable for dairy cows.",
-      image: "https://via.placeholder.com/300",
+      image: "https://upload.wikimedia.org/wikipedia/commons/5/53/Animal_feed_from_bush_biomass.jpg",
       nutrients: {
         protein: "48%",
         fiber: "4%",
@@ -67,7 +67,7 @@ const Feeds = () => {
       name: "Wheat Bran",
       description:
         "By-product of wheat milling, provides fiber and some protein.",
-      image: "https://via.placeholder.com/300",
+      image: "https://jandsharpfeed.com/wp-content/uploads/2023/07/0b7bd644-28e7-41ee-83e2-a05dcbcf9bdc_shutterstock_225184108_jpg.jpg",
       nutrients: {
         protein: "14%",
         fiber: "15%",
@@ -82,7 +82,7 @@ const Feeds = () => {
       name: "Mineral Block",
       description:
         "Supplemental feed containing essential minerals for cattle health.",
-      image: "https://via.placeholder.com/300",
+      image: "https://i.ebayimg.com/images/g/2s0AAOSw0IlmTXhK/s-l1600.webp",
       nutrients: {
         protein: "0%",
         fiber: "0%",
@@ -94,9 +94,23 @@ const Feeds = () => {
     },
     {
       id: 7,
+      name: "Super neipher Grass",
+      description: "Fresh grass forage, rich in fiber and essential nutrients.",
+      image: "https://www.agrifarming.in/wp-content/uploads/2015/11/Green-Fodder1.jpg",
+      nutrients: {
+        protein: "5%",
+        fiber: "20%",
+        moisture: "80%",
+        energy: "0.5 Mcal/kg",
+      },
+      additionalInfo:
+        "Fresh grass is an important source of fiber and essential nutrients. It supports good digestion and is a natural, low-cost feed option.",
+    },
+    {
+      id: 11,
       name: "Grass",
       description: "Fresh grass forage, rich in fiber and essential nutrients.",
-      image: "https://via.placeholder.com/300",
+      image: "https://d27p2a3djqwgnt.cloudfront.net/wp-content/uploads/2018/01/24115646/meadow-1728902_1280-e1556129977731.jpg",
       nutrients: {
         protein: "5%",
         fiber: "20%",
@@ -111,7 +125,7 @@ const Feeds = () => {
       name: "Calcium Supplement",
       description:
         "Supplemental feed rich in calcium for bone health and milk production.",
-      image: "https://via.placeholder.com/300",
+      image: "https://static.wixstatic.com/media/d5dd5c_76222c9e84ab4349831eb3709e309494~mv2.jpg/v1/fill/w_902,h_820,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d5dd5c_76222c9e84ab4349831eb3709e309494~mv2.jpg",
       nutrients: {
         protein: "0%",
         fiber: "0%",
@@ -125,7 +139,7 @@ const Feeds = () => {
       id: 9,
       name: "Beet Pulp",
       description: "High-fiber feed made from sugar beet by-products.",
-      image: "https://via.placeholder.com/300",
+      image:"https://www.labudde.com/wp-content/uploads/LaBudde-Premium-Screened-Shredded-Beet-Pulp-980x693.jpg",
       nutrients: {
         protein: "9%",
         fiber: "20%",
@@ -139,7 +153,7 @@ const Feeds = () => {
       id: 10,
       name: "Oats",
       description: "Energy-rich grain for supplementing animal diets.",
-      image: "https://via.placeholder.com/300",
+      image: "https://eagleseed.com/sitebuilder/images/IMG_1369-420x307.jpg",
       nutrients: {
         protein: "14%",
         fiber: "11%",
@@ -165,7 +179,7 @@ const Feeds = () => {
     <div className="bg-gray-100 min-h-screen">
       <header className=" w-full">
         <div className="container mx-auto p-4">
-          <h1 className="text-5xl font-bold text-center text-green-600">
+          <h1 className="text-5xl font-bold text-center mt-10 text-green-600">
             Animal Feed Options
           </h1>
           <p className="text-center text-xl mt-2 text-gray-700">
@@ -174,11 +188,11 @@ const Feeds = () => {
         </div>
         <section className="py-8 px-4">
           <div className="container mx-auto flex flex-col md:flex-row items-center gap-6">
-            <div className="flex-shrink-0 w-full md:w-1/3 flex justify-center">
+            <div className="flex-shrink-0 w-full md:w-1/3 mr-6 flex justify-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://media.istockphoto.com/id/519861694/photo/cows-on-green-meadow.jpg?s=612x612&w=0&k=20&c=NMZFb27NKSQ2rB1uz3WxwXdzAJaAxBP-brGf2DpYWNU="
                 alt="Animal Feed"
-                className="w-64 h-64 object-cover rounded-lg shadow-lg border border-gray-300"
+                className="w-84 h-70 object-cover rounded-lg shadow-lg border border-gray-300"
               />
             </div>
             <div className="md:w-2/3">
@@ -248,7 +262,7 @@ const Feeds = () => {
                       <img
                         src={feed.image}
                         alt={feed.name}
-                        className="w-24 h-16 object-cover rounded"
+                        className="w-24 h-16 object-cover  rounded"
                       />
                     </td>
                     <td className="py-2 px-4 text-sm text-gray-700 border-b border-gray-400">
