@@ -22,7 +22,7 @@ const About = () => {
       <main className="container mx-auto p-6">
         <section className="my-10 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="lg:w-2/2 mb-6 mr-11 lg:mb-0 lg:order-1">
-            <img src="https://media.istockphoto.com/id/519861694/photo/cows-on-green-meadow.jpg?s=612x612&w=0&k=20&c=NMZFb27NKSQ2rB1uz3WxwXdzAJaAxBP-brGf2DpYWNU=" alt="Vision" className="rounded-lg shadow-md" />
+            <img src="https://media.istockphoto.com/id/1297005217/photo/farmer-pouring-raw-milk-into-container.jpg?s=612x612&w=0&k=20&c=toiruwu04HHkwnLZhpKEjNPqOHI7Kmut5NMGTFSGm4M=" alt="Vision" className="rounded-lg shadow-md" />
           </div>
           <div className="lg:w-1/2 lg:order-1">
             <h2 className="text-3xl font-semibold text-green-600 mb-6">
