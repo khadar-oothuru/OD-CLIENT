@@ -5,20 +5,23 @@ import { FaCheckCircle } from 'react-icons/fa';
 const About = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header className="bg-white shadow">
+      <header className="mt-14">
         <div className="container mx-auto p-4">
           <h1 className="text-5xl font-bold text-center text-green-600">
             About Us
           </h1>
-          <p className="text-center text-xl mt-2 text-gray-700">
-            Learn more about our mission, vision, and the team behind the Milk Transaction Management System
+          <p className="text-center text-xl mt-5 text-gray-700">
+            Learn more about our mission, vision, and the team behind the  
+            <span className="font-semibold hover:text-[#00d684] hover:scale-105 cursor-pointer ml-2">Our Dairy</span>
+
+           
           </p>
         </div>
       </header>
 
       <main className="container mx-auto p-6">
         <section className="my-10 flex flex-col lg:flex-row items-center lg:justify-between">
-          <div className="lg:w-1/2 mb-6 lg:mb-0 lg:order-2">
+          <div className="lg:w-2/2 mb-6 mr-11 lg:mb-0 lg:order-1">
             <img src="https://media.istockphoto.com/id/519861694/photo/cows-on-green-meadow.jpg?s=612x612&w=0&k=20&c=NMZFb27NKSQ2rB1uz3WxwXdzAJaAxBP-brGf2DpYWNU=" alt="Vision" className="rounded-lg shadow-md" />
           </div>
           <div className="lg:w-1/2 lg:order-1">
@@ -32,8 +35,8 @@ const About = () => {
         </section>
 
         <section className="my-10 flex flex-col lg:flex-row-reverse items-center lg:justify-between">
-          <div className="lg:w-1/2 mb-6 lg:mb-0">
-            <img src="https://via.placeholder.com/600x400" alt="Mission" className="rounded-lg shadow-md" />
+          <div className="lg:w-1/2 mb-6 ml-11 lg:mb-0">
+            <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202405/66320bb5ca855-upi-transactions-declined-in-volume-and-value-in-april-by-1-and-07--compared-to-march-2024-013021777-16x9.jpg?size=948:533" alt="Mission" className="rounded-lg shadow-md" />
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-semibold text-green-600 mb-6">
