@@ -5,7 +5,6 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaLock,
-  FaUpload,
 } from "react-icons/fa";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { MdAppRegistration } from "react-icons/md";
@@ -89,13 +88,13 @@ const RegisterForm = ({
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Enter your full name"
                   required
                 />
               </div>
               {errors.fullName && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#ff7b7b] text-sm font-semibold">
                   {errors.fullName}
                 </p>
               )}
@@ -108,13 +107,13 @@ const RegisterForm = ({
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Enter your phone number"
                   required
                 />
               </div>
               {errors.phoneNumber && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#B71C1C] text-sm font-semibold">
                   {errors.phoneNumber}
                 </p>
               )}
@@ -127,13 +126,13 @@ const RegisterForm = ({
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               {errors.email && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#f56c6c] text-sm font-semibold">
                   {errors.email}
                 </p>
               )}
@@ -159,13 +158,13 @@ const RegisterForm = ({
                   name="villageName"
                   value={formData.villageName}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Enter your village name"
                   required
                 />
               </div>
               {errors.villageName && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#B71C1C] text-sm font-semibold">
                   {errors.villageName}
                 </p>
               )}
@@ -182,9 +181,7 @@ const RegisterForm = ({
                     value="Cow"
                     checked={formData.milkType === "Cow"}
                     onChange={handleInputChange}
-                    className={`radio radio-success ${
-                      errors.milkType ? "border-red-500" : ""
-                    }`}
+                    className="text-white"
                   />
                   <span className="text-white ml-2">Cow</span>
                 </label>
@@ -195,9 +192,7 @@ const RegisterForm = ({
                     value="Buffalo"
                     checked={formData.milkType === "Buffalo"}
                     onChange={handleInputChange}
-                    className={`radio radio-success ${
-                      errors.milkType ? "border-red-500" : ""
-                    }`}
+                    className="text-white"
                   />
                   <span className="text-white ml-2">Buffalo</span>
                 </label>
@@ -208,14 +203,12 @@ const RegisterForm = ({
                     value="Both"
                     checked={formData.milkType === "Both"}
                     onChange={handleInputChange}
-                    className={`radio radio-success ${
-                      errors.milkType ? "border-red-500" : ""
-                    }`}
+                    className="text-white"
                   />
                   <span className="text-white ml-2">Both</span>
                 </label>
                 {errors.milkType && (
-                  <p className="text-red-500 text-sm font-semibold ml-2">
+                  <p className="text-[#B71C1C] text-sm font-semibold ml-2">
                     {errors.milkType}
                   </p>
                 )}
@@ -233,9 +226,7 @@ const RegisterForm = ({
                     value="Milk Seller"
                     checked={formData.userType === "Milk Seller"}
                     onChange={handleInputChange}
-                    className={`radio radio-success ${
-                      errors.userType ? "border-red-500" : ""
-                    }`}
+                    className="text-white"
                   />
                   <span className="text-white ml-2">Milk Seller</span>
                 </label>
@@ -246,14 +237,12 @@ const RegisterForm = ({
                     value="Dairy Owner"
                     checked={formData.userType === "Dairy Owner"}
                     onChange={handleInputChange}
-                    className={`radio radio-success ${
-                      errors.userType ? "border-red-500" : ""
-                    }`}
+                    className="text-white"
                   />
                   <span className="text-white ml-2">Dairy Owner</span>
                 </label>
                 {errors.userType && (
-                  <p className="text-red-500 text-sm font-semibold ml-2">
+                  <p className="text-[#B71C1C] text-sm font-semibold ml-2">
                     {errors.userType}
                   </p>
                 )}
@@ -287,13 +276,13 @@ const RegisterForm = ({
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Enter your password"
                   required
                 />
               </div>
               {errors.password && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#B71C1C] text-sm font-semibold">
                   {errors.password}
                 </p>
               )}
@@ -306,28 +295,29 @@ const RegisterForm = ({
                   name="confirmPassword"
                   value={formData.confirmPassword}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
                   placeholder="Confirm your password"
                   required
                 />
               </div>
               {errors.confirmPassword && (
-                <p className="text-red-500 text-sm font-semibold">
+                <p className="text-[#B71C1C] text-sm font-semibold">
                   {errors.confirmPassword}
                 </p>
               )}
             </div>
-            <div className="flex items-center mb-4">
-              <label className="block text-white text-sm font-semibold mr-4">
+            <div className="mb-4">
+              <label className="block text-white text-sm font-semibold mb-2">
                 Profile Picture
               </label>
               <input
                 type="file"
-                accept="image/*"
                 onChange={handleFileChange}
-                className="text-white"
+                className="text-white bg-transparent border-none outline-none"
               />
-              {fileName && <span className="text-white ml-2">{fileName}</span>}
+              {fileName && (
+                <p className="text-white text-sm mt-2">{fileName}</p>
+              )}
             </div>
             <div className="flex justify-between">
               <button
@@ -337,6 +327,7 @@ const RegisterForm = ({
               >
                 <BsArrowLeft size={24} className="text-white" />
               </button>
+
               <button
                 type="submit"
                 className="bg-black text-white py-2 px-4 rounded-md flex items-center justify-center space-x-2 hover:bg-green-500 transition duration-300"

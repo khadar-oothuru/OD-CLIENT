@@ -13,7 +13,7 @@ const LoginForm = ({ toggleAuthMode }) => {
           <FaUser className="text-white mr-2" />
           <input
             type="text"
-            className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+            className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
             placeholder="Enter your number or email"
             required
           />
@@ -22,7 +22,7 @@ const LoginForm = ({ toggleAuthMode }) => {
           <FaLock className="text-white mr-2" />
           <input
             type="password"
-            className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
+            className="w-full px-3 py-2 bg-transparent border-none outline-none text-white placeholder-white"
             placeholder="Enter your password"
             required
           />
