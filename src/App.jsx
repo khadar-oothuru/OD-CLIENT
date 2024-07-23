@@ -8,62 +8,29 @@ import Login from "./components/Login/Login";
 import Footer from "./components/Footer";
 import QuesCards from "./components/News/QuesCards";
 
-
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container mx-auto px-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Aboutus />} />
-          <Route path="/market" element={<MarketPrice />} />
-          <Route path="/feed" element={<Feeds />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/news" element={<QuesCards />} />
-          {/* Add more routes as needed */}
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/market" element={<MarketPrice />} />
+        <Route path="/feed" element={<Feeds />} />
+
+        <Route path="/news" element={<QuesCards />} />
+        {/* Add more routes as needed */}
+      </Routes>
+
       <Footer />
     </Router>
   );
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // // src/App.jsx
 

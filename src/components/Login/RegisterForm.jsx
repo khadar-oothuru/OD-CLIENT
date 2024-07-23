@@ -74,62 +74,68 @@ const RegisterForm = ({
   };
 
   return (
-    <div className="text-black p-4 md:p-8">
-     <h2 className="text-2xl font-bold mb-5 text-center text-green-600">
+    <div className="text-white p-4 md:p-8">
+      <h2 className="text-2xl font-semibold mb-5 text-center text-white">
         Register
       </h2>
       <form onSubmit={handleSubmit}>
         {currentPage === 1 && (
           <>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaUser className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaUser className="text-white mr-2" />
                 <input
                   type="text"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Enter your full name"
                   required
                 />
               </div>
               {errors.fullName && (
-                <p className="text-red-500 text-sm">{errors.fullName}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.fullName}
+                </p>
               )}
             </div>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaPhone className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaPhone className="text-white mr-2" />
                 <input
                   type="tel"
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Enter your phone number"
                   required
                 />
               </div>
               {errors.phoneNumber && (
-                <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.phoneNumber}
+                </p>
               )}
             </div>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaEnvelope className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaEnvelope className="text-white mr-2" />
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.email}
+                </p>
               )}
             </div>
             <div className="flex justify-end">
@@ -138,7 +144,7 @@ const RegisterForm = ({
                 onClick={handleNextPage}
                 className="bg-black text-white py-2 px-4 rounded-md hover:bg-green-500 transition duration-300"
               >
-                <BsArrowRight size={24} />
+                <BsArrowRight size={24} className="text-white" />
               </button>
             </div>
           </>
@@ -146,24 +152,26 @@ const RegisterForm = ({
         {currentPage === 2 && (
           <>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaMapMarkerAlt className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaMapMarkerAlt className="text-white mr-2" />
                 <input
                   type="text"
                   name="villageName"
                   value={formData.villageName}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Enter your village name"
                   required
                 />
               </div>
               {errors.villageName && (
-                <p className="text-red-500 text-sm">{errors.villageName}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.villageName}
+                </p>
               )}
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
+              <label className="block text-white text-sm font-semibold mb-2">
                 Milk Type
               </label>
               <div className="flex items-center">
@@ -178,7 +186,7 @@ const RegisterForm = ({
                       errors.milkType ? "border-red-500" : ""
                     }`}
                   />
-                  Cow
+                  <span className="text-white ml-2">Cow</span>
                 </label>
                 <label className="flex items-center mr-4">
                   <input
@@ -191,7 +199,7 @@ const RegisterForm = ({
                       errors.milkType ? "border-red-500" : ""
                     }`}
                   />
-                  Buffalo
+                  <span className="text-white ml-2">Buffalo</span>
                 </label>
                 <label className="flex items-center">
                   <input
@@ -204,15 +212,17 @@ const RegisterForm = ({
                       errors.milkType ? "border-red-500" : ""
                     }`}
                   />
-                  Both
+                  <span className="text-white ml-2">Both</span>
                 </label>
                 {errors.milkType && (
-                  <p className="text-red-500 text-sm ml-2">{errors.milkType}</p>
+                  <p className="text-red-500 text-sm font-semibold ml-2">
+                    {errors.milkType}
+                  </p>
                 )}
               </div>
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
+              <label className="block text-white text-sm font-semibold mb-2">
                 User Type
               </label>
               <div className="flex items-center">
@@ -227,7 +237,7 @@ const RegisterForm = ({
                       errors.userType ? "border-red-500" : ""
                     }`}
                   />
-                  Milk Seller
+                  <span className="text-white ml-2">Milk Seller</span>
                 </label>
                 <label className="flex items-center">
                   <input
@@ -240,10 +250,12 @@ const RegisterForm = ({
                       errors.userType ? "border-red-500" : ""
                     }`}
                   />
-                  Dairy Owner
+                  <span className="text-white ml-2">Dairy Owner</span>
                 </label>
                 {errors.userType && (
-                  <p className="text-red-500 text-sm ml-2">{errors.userType}</p>
+                  <p className="text-red-500 text-sm font-semibold ml-2">
+                    {errors.userType}
+                  </p>
                 )}
               </div>
             </div>
@@ -251,16 +263,16 @@ const RegisterForm = ({
               <button
                 type="button"
                 onClick={handlePrevPage}
-                className="bg-gray-500 text-white py-1 px-4 rounded-md hover:bg-green-500 transition duration-300"
+                className="bg-black text-white py-2 px-4 rounded-md hover:bg-green-500 transition duration-300"
               >
-                <BsArrowLeft size={24} />
+                <BsArrowLeft size={24} className="text-white" />
               </button>
               <button
                 type="button"
                 onClick={handleNextPage}
-                className="bg-black text-white py-1 px-4 rounded-md hover:bg-green-500 transition duration-300"
+                className="bg-black text-white py-2 px-4 rounded-md hover:bg-green-500 transition duration-300"
               >
-                <BsArrowRight size={24} />
+                <BsArrowRight size={24} className="text-white" />
               </button>
             </div>
           </>
@@ -268,73 +280,69 @@ const RegisterForm = ({
         {currentPage === 3 && (
           <>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaLock className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaLock className="text-white mr-2" />
                 <input
                   type="password"
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Enter your password"
                   required
                 />
               </div>
               {errors.password && (
-                <p className="text-red-500 text-sm">{errors.password}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.password}
+                </p>
               )}
             </div>
             <div className="mb-4">
-              <div className="flex items-center mb-2 border-b-2 border-gray-300">
-                <FaLock className="text-gray-500 mr-2" />
+              <div className="flex items-center mb-2 border-b-2 border-white">
+                <FaLock className="text-white mr-2" />
                 <input
                   type="password"
                   name="confirmPassword"
                   value={formData.confirmPassword}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-black"
+                  className="w-full px-3 py-2 bg-transparent border-none outline-none text-white"
                   placeholder="Confirm your password"
                   required
                 />
               </div>
               {errors.confirmPassword && (
-                <p className="text-red-500 text-sm">{errors.confirmPassword}</p>
+                <p className="text-red-500 text-sm font-semibold">
+                  {errors.confirmPassword}
+                </p>
               )}
             </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Profile Picture (Optional)
+            <div className="flex items-center mb-4">
+              <label className="block text-white text-sm font-semibold mr-4">
+                Profile Picture
               </label>
-              <label
-                htmlFor="profilePicture"
-                className="flex items-center cursor-pointer bg-gray-100 text-black px-3 py-2 border border-gray-300 rounded-md hover:bg-gray-200 transition duration-300"
-              >
-                <FaUpload className="mr-2" />
-                {fileName ? fileName : "Upload File"}
-                <input
-                  id="profilePicture"
-                  type="file"
-                  onChange={handleFileChange}
-                  className="hidden"
-                />
-              </label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                className="text-white"
+              />
+              {fileName && <span className="text-white ml-2">{fileName}</span>}
             </div>
             <div className="flex justify-between">
               <button
                 type="button"
                 onClick={handlePrevPage}
-                className="bg-gray-500 text-white font-medium   py-1 px-4 rounded-md hover:bg-[#00d684]  transition duration-300"
+                className="bg-black text-white py-2 px-4 rounded-md hover:bg-green-500 transition duration-300"
               >
-                <BsArrowLeft size={24} />
+                <BsArrowLeft size={24} className="text-white" />
               </button>
               <button
                 type="submit"
-                className="bg-black text-white py-2 px-4 rounded-md hover:bg-[#00d684] transition duration-300 flex items-center justify-center space-x-2"
+                className="bg-black text-white py-2 px-4 rounded-md flex items-center justify-center space-x-2 hover:bg-green-500 transition duration-300"
               >
-                <MdAppRegistration className="w-6 h-6" />{" "}
-                
-                <p className=" font-medium  ">Register</p>{" "}
-               
+                <MdAppRegistration size={24} className="text-white" />
+                <span className="text-white font-semibold">Register</span>
               </button>
             </div>
           </>
