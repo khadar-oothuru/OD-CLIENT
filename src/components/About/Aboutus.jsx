@@ -37,6 +37,10 @@ const About = () => {
         <section className="my-10 flex flex-col lg:flex-row-reverse items-center lg:justify-between">
           <div className="lg:w-1/2 mb-6 ml-11 lg:mb-0">
             <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202405/66320bb5ca855-upi-transactions-declined-in-volume-and-value-in-april-by-1-and-07--compared-to-march-2024-013021777-16x9.jpg?size=948:533" alt="Mission" className="rounded-lg shadow-md" />
+
+
+
+            
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-semibold text-green-600 mb-6">
@@ -47,6 +51,7 @@ const About = () => {
             </p>
           </div>
         </section>
+        
 
         <section className="my-10">
           <h2 className="text-3xl font-semibold text-center text-green-600 mb-6">
