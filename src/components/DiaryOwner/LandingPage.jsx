@@ -24,6 +24,7 @@ const LandingPage = () => {
             <div className="font-bold">User 3</div>
           </div>
         </div>
+        
       </div>
     </div>
   );
