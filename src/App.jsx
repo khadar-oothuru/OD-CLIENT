@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/market" element={<MarketPrice />} />
         <Route path="/feed" element={<Feeds />} />
         <Route path="/news" element={<QuesCards />} />
-        <Route path="/land" element={<LandingPage/>} />
+        <Route path="/ownerlanding" element={<LandingPage/>} />
 
 {/*       
         {userRole === 'user' && (
